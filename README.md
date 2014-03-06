@@ -17,17 +17,18 @@ and Accumulo 1.4.3.
 
 
 # Connecting to VM using PuTTY:
-1) Open VirtualBox. Go to Settings for this VM. [If you're already running the VM, please shut it down first.]
-2) In the Settings tab, select Network. Click on Advanced button on the right, and then click on Port Forwarding.
-3) Add the following rule:
-   (Protocol = TCP, Host IP = , Host Port = 2222, Guest IP = , Guest Port = 22)
+1. Open VirtualBox. Go to Settings for this VM. [If you're already running the VM, please shut it down first.]
+2. In the Settings tab, select Network. Click on Advanced button on the right, and then click on Port Forwarding.
+3. Add the following rule:<br />
+   ```Protocol = TCP, Host IP = , Host Port = 2222, Guest IP = , Guest Port = 22```<br/>
    Note: No need to specify anything for Host IP and Guest IP, it's okay to leave them blank!
-4) Save everything.
-5) Boot up the VM.
-6) Open PuTTY.
-7) Specify Host Name: 127.0.0.1
-                Port: 2222
+4. Save everything.
+5. Boot up the VM.
+6. Open PuTTY.
+7. Specify<br />
+   Host Name: ```127.0.0.1```<br />
+   Port: ```2222```<br />
    Click Open.
-8) Once the terminal opens and prompts you for credentials, enter:
-   Username: vagrant
-   Password: vagrant
+8. Once the terminal opens and prompts you for credentials, enter:<br />
+   Username: ```vagrant``` <br />
+   Password: ```vagrant```
