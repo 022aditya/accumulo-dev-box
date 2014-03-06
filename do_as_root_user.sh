@@ -3,6 +3,7 @@
 # This actually does have to be done as root
 cat > /etc/hosts <<EOF
 127.0.0.1       localhost
+127.0.1.1       precise64
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
@@ -13,6 +14,7 @@ ff02::2 ip6-allrouters
 
 10.211.55.100   accumulo-dev-box
 EOF
+
 
 #Needs to be done as root.
 echo "Fixing VM swappiness"
