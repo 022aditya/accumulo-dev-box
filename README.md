@@ -13,4 +13,21 @@ and Accumulo 1.4.3.
 6. Run ```vagrant ssh``` from within the project directory to get into your VM, or open up the VirtualBox
    Manager app to tweak settings, forward ports, etc.
 7. The app can now be accessed at port 10.211.55.100. To make it accessible at "accumulo-dev-box", add
-   the following to the end of your /etc/hosts file: ```10.211.55.100 accumulo-dev-box```
+   the following to the end of your /etc/hosts file: ```10.211.55.100 accumulo-dev-box```. (This step is already done     if you executed do_as_root_user.sh)
+
+
+# Connecting to VM using PuTTY:
+1) Open VirtualBox. Go to Settings for this VM. [If you're already running the VM, please shut it down first.]
+2) In the Settings tab, select Network. Click on Advanced button on the right, and then click on Port Forwarding.
+3) Add the following rule:
+   (Protocol = TCP, Host IP = , Host Port = 2222, Guest IP = , Guest Port = 22)
+   Note: No need to specify anything for Host IP and Guest IP, it's okay to leave them blank!
+4) Save everything.
+5) Boot up the VM.
+6) Open PuTTY.
+7) Specify Host Name: 127.0.0.1
+                Port: 2222
+   Click Open.
+8) Once the terminal opens and prompts you for credentials, enter:
+   Username: vagrant
+   Password: vagrant
